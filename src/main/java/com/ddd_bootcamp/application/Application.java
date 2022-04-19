@@ -18,7 +18,7 @@ public class Application {
         Item applePencilItem = new Item(applePencil, 2);
         cart.add(applePencilItem);
 
-
+        System.out.println("-------------------------------------------------------");
         System.out.println("Cart = " + cart);
         List<Item> items = cart.getItems();
         System.out.println("items = " + items);
@@ -28,10 +28,13 @@ public class Application {
 
         cart.remove(applePencilItem1);
 
-        System.out.println("----------------------------------------");
+        System.out.println("-------------------------------------------------------");
         System.out.println("After Removing Apple Pencil with 2 quantity");
         System.out.println("Cart = " + cart);
+        System.out.println("--------------------------------------------------------");
         List<Item> items1 = cart.getItems();
         System.out.println("items = " + items1);
+        System.out.println("--------------------------------------------------------");
+
     }
 }

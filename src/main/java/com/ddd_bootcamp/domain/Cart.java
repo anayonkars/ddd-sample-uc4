@@ -14,12 +14,16 @@ public class Cart {
         return items;
     }
 
-    @Override
-    public String toString() {
-        return items.toString();
-    }
 
     public void remove(Item item) {
         items.remove(item);
     }
+
+    @Override
+    public String toString() {
+        return "Cart{" +
+                "items=" + items +
+                '}';
+    }
+
 }
