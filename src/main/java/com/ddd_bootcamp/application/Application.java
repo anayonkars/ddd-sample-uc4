@@ -27,6 +27,7 @@ public class Application {
         Item applePencilItem1 = new Item(applePencil1, 2);
 
         cart.remove(applePencilItem1);
+        //cart.remove(applePencil1);
 
         System.out.println("-------------------------------------------------------");
         System.out.println("After Removing Apple Pencil with 2 quantity");
