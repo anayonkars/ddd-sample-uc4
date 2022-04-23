@@ -23,11 +23,11 @@ public class Application {
         List<Item> items = cart.getItems();
         System.out.println("items = " + items);
 
-        Product applePencil1 = new Product("Apple Pencil");
-        Item applePencilItem1 = new Item(applePencil1, 2);
+        Product applePencilProduct1 = new Product("Apple Pencil");
+        Item applePencilItem1 = new Item(applePencilProduct1, 2);
 
-        cart.remove(applePencilItem1);
-        //cart.remove(applePencil1);
+        //cart.remove(applePencilItem1);
+        cart.remove(applePencilProduct1);
 
         System.out.println("-------------------------------------------------------");
         System.out.println("After Removing Apple Pencil with 2 quantity");

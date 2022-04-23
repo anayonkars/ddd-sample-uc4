@@ -22,8 +22,7 @@ public class Cart {
     }
 
     public void remove(Product product) {
-        this.items = items.stream().filter(item -> !item.getProduct().equals(product))
-                .collect(Collectors.toList());
+        items.removeIf(item -> item.getProduct().equals(product));
     }
 
     @Override
