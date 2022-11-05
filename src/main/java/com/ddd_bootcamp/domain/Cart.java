@@ -2,11 +2,11 @@ package com.ddd_bootcamp.domain;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class Cart {
     private List<Item> items = new ArrayList<>();
+
+    private List<Product> removedProducts = new ArrayList<>();
 
     public void add(Item item) {
         items.add(item);
@@ -19,6 +19,7 @@ public class Cart {
 
     public void remove(Item item) {
         items.remove(item);
+        removedProducts.add(item.getProduct());
     }
 
     public void remove(Product product) {
@@ -32,4 +33,7 @@ public class Cart {
                 '}';
     }
 
+    public List<Product> removedProducts() {
+        return removedProducts;
+    }
 }
